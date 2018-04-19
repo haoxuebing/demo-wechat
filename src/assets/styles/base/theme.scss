@@ -1,0 +1,87 @@
+.layout .weui{
+  &-cells{
+    margin-top: 0;
+    &:before{
+      color: #E6E6E6;
+      border-top-color: #E6E6E6;
+    }
+    &:after{
+      color: #E6E6E6;
+      border-bottom-color: #E6E6E6;
+    }
+  }
+  &-btn{
+    &_primary{
+      background-color: #50c059;
+      &:active{
+        background-color: darken(#50c059, 7%);
+      }
+    }
+    &_warn{
+      background-color: #F4664B;
+      &:active{
+        background-color: darken(#F4664B, 7%);
+      }
+    }
+  }
+  &-cell{
+    &:before{
+      color: #E6E6E6;
+      border-top-color: #E6E6E6;
+    }
+    &:after{
+      color: #E6E6E6;
+      border-bottom-color: #E6E6E6;
+    }
+  }
+}
+
+.layout {
+  .vux-x-input{
+    .weui-cell{
+      &__hd{
+        width: 1.6rem;
+      }
+    }
+    .weui-label{
+      color: #998A87;
+    }
+  }
+  .vux-no-group-title{
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 321px) {
+  .layout{
+    .weui-btn{
+      font-size: 15px;
+    }
+    .weui-cells{
+      font-size: 14px;
+    }
+  }
+
+}
+@media screen and (min-width: 321px) and (max-width: 400px){
+  .layout{
+    .weui-btn{
+      font-size: 16px;
+    }
+    .weui-cells{
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (min-width: 400px) {
+  .layout{
+    .weui-btn{
+      font-size: 18px;
+    }
+    .weui-cells{
+      font-size: 17px;
+    }
+  }
+
+}
